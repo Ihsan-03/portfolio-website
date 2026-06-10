@@ -105,7 +105,16 @@ export default function App() {
             <div className="mb-6 flex flex-col justify-between gap-3 sm:flex-row">
               <div>
                 <h3 className="text-2xl font-bold text-slate-950 dark:text-white">{experience.title}</h3>
-                <p className="font-semibold text-signal dark:text-teal-300">{experience.company}</p>
+                <p className="font-semibold text-signal dark:text-teal-300">
+                  <a
+                    href={experience.companyUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline"
+                  >
+                    {experience.company}
+                  </a>
+                </p>
               </div>
               <p className="text-sm font-medium text-slate-500 dark:text-slate-400">{experience.period}</p>
             </div>

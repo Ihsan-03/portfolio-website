@@ -53,6 +53,7 @@ export const skills = [
 export const experience = {
   title: 'ML Intern',
   company: 'Privaseverse',
+  companyUrl: 'https://privaseverse.com/',
   period: 'July 2025 - Dec 2025',
   bullets: [
     'Automation of ML workflow deployment and infrastructure management',
