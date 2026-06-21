@@ -74,10 +74,17 @@ export const projects = [
   {
     title: 'Virtual Control System (IoT & ML)',
     description:
-      'A comprehensive IoT control system integrating machine learning for predictive analytics and automation. Built with focus on scalable architecture, containerization, and deployment on cloud platforms for real-time data processing.',
+      'A comprehensive IoT control system integrating machine learning for predictive analytics and automation. Built with focus on scalable architecture, containerization and deployment on cloud platforms for real-time data processing.',
     tags: ['IoT', 'ML', 'Python', 'Automation'],
   },
-];
+  {
+    title: 'Micro GPT',
+    description:
+      'A miniature GPT-style language model built during a Machine Learning Internship. Implemented dataset preprocessing, tokenization, positional encoding, transformer architecture, model training and text generation using Greedy Decoding, Top-k Sampling and Beam Search.',
+    tags: ['PyTorch', 'NLP', 'Transformers', 'Machine Learning'],
+    github: 'https://github.com/Ihsan-03/micro-gpt',
+  },
+  ];
 
 export const education = {
   degree: 'Computer Science Engineering',
