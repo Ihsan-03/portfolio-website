@@ -22,7 +22,7 @@ export const profile = {
   tryHackMe: 'https://tryhackme.com/p/MohdIhsan',
   tryHackMeLabel: 'tryhackme.com/p/MohdIhsan',
   resumeUrl:
-    '/Resume.pdf',
+    `${import.meta.env.BASE_URL}Resume.pdf`,
 };
 
 export const about = [
