@@ -2,14 +2,6 @@
 
 Personal portfolio website showcasing my experience, projects, technical skills, certifications, and professional journey in DevOps, Cloud Computing, Machine Learning, and Cybersecurity.
 
-## Live Website
-
-https://ihsan-03.github.io/portfolio-website/
-
-## Deployment
-
-The website is automatically deployed using GitHub Actions whenever changes are pushed to the `main` branch.
-
 ## About
 
 This portfolio highlights:
