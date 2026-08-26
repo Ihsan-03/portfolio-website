@@ -1,4 +1,4 @@
-import { ArrowDownToLine, ExternalLink, Github, Linkedin, Mail, Send, ShieldCheck, Terminal } from 'lucide-react';
+import { ArrowDownToLine, ExternalLink, Github, Linkedin, Mail, Send, ShieldCheck, Terminal, User } from 'lucide-react';
 import { Header } from './components/Header';
 import { Section } from './components/Section';
 import {
@@ -29,9 +29,25 @@ export default function App() {
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(15,118,110,0.18),transparent_34%),linear-gradient(135deg,rgba(249,115,22,0.12),transparent_35%)]" />
           <div className="relative mx-auto grid min-h-[calc(100vh-73px)] max-w-7xl items-center gap-12 px-4 py-16 sm:px-6 lg:grid-cols-[1.08fr_0.92fr] lg:px-8">
             <div>
-              <p className="mb-5 inline-flex rounded-full border border-teal-200 bg-white/80 px-4 py-2 text-sm font-semibold text-signal shadow-sm dark:border-teal-900 dark:bg-slate-900/80 dark:text-teal-200">
-                Cloud infrastructure, automation, and modern deployment practices
-              </p>
+              <div className="mb-6 flex flex-wrap items-center gap-4">
+                <div className="group relative shrink-0">
+                  <div className="absolute -inset-0.5 rounded-full bg-gradient-to-r from-teal-500 to-orange-500 opacity-75 blur transition duration-300 group-hover:opacity-100" />
+                  <div className="relative flex h-20 w-20 items-center justify-center overflow-hidden rounded-full border-2 border-white bg-slate-100 shadow-md dark:border-slate-900 dark:bg-slate-800 sm:h-24 sm:w-24">
+                    <User className="text-slate-400 dark:text-slate-500" size={40} />
+                    <img
+                      src={profile.avatarUrl}
+                      alt={profile.name}
+                      className="absolute inset-0 h-full w-full object-cover"
+                      onError={(e) => {
+                        (e.currentTarget as HTMLElement).style.display = 'none';
+                      }}
+                    />
+                  </div>
+                </div>
+                <p className="inline-flex max-w-md rounded-full border border-teal-200 bg-white/80 px-4 py-2 text-sm font-semibold text-signal shadow-sm dark:border-teal-900 dark:bg-slate-900/80 dark:text-teal-200">
+                  Cloud infrastructure, automation, and modern deployment practices
+                </p>
+              </div>
               <h1 className="max-w-4xl text-5xl font-bold leading-tight text-slate-950 dark:text-white sm:text-6xl">
                 {profile.name}
               </h1>
