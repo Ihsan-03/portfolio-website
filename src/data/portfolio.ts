@@ -22,7 +22,7 @@ export const profile = {
   tryHackMe: 'https://tryhackme.com/p/MohdIhsan',
   tryHackMeLabel: 'tryhackme.com/p/MohdIhsan',
   resumeUrl:
-    'https://cdn.b12.io/client_media/8mOlY8yH/b7ca9c8e-5e6a-11f1-baf1-0242ac110002-Resume-4ATS.pdf',
+    '/Resume.pdf',
 };
 
 export const about = [
@@ -64,7 +64,22 @@ export const experience = {
   ],
 };
 
-export const projects = [
+export interface Project {
+  title: string;
+  description: string;
+  tags: string[];
+  github?: string;
+  demo?: string;
+}
+
+export const projects: Project[] = [
+  {
+    title: 'QueryQuill AI-powered DevOps assistant',
+    description:
+      'AI-powered DevOps assistant that helps developers review Dockerfiles, analyze GitHub Actions workflows, and explain Linux/CLI commands using local AI models. Built with Python, Ollama, Docker to demonstrate a self-hosted, containerized DevOps workflow.',
+    tags: ['Python', 'Docker', 'Ollama'],
+    github: 'https://github.com/Ihsan-03/QueryQuill',
+  },
   {
     title: 'A.R.I.A Cloud-Ready Python Voice Assistant',
     description:
@@ -84,7 +99,7 @@ export const projects = [
     tags: ['PyTorch', 'NLP', 'Transformers', 'Machine Learning'],
     github: 'https://github.com/Ihsan-03/micro-gpt',
   },
-  ];
+];
 
 export const education = {
   degree: 'Computer Science Engineering',
